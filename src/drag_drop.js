@@ -98,13 +98,13 @@ function drop(e) {
       .setAttribute('for', `item-${currentId}`);
 
     // Set checked attribute
-    if (checkedSource === true && checkedDestiny === false) {
-      dragSrcEl.children[0].children[0].checked = false;
-      dropDestEl.children[0].children[0].checked = true;
-    } else if (checkedSource === false && checkedDestiny === true) {
-      dragSrcEl.children[0].children[0].checked = true;
-      dropDestEl.children[0].children[0].checked = false;
-    }
+    // if (checkedSource === true && checkedDestiny === false) {
+    //   dragSrcEl.children[0].children[0].checked = false;
+    //   dropDestEl.children[0].children[0].checked = true;
+    // } else if (checkedSource === false && checkedDestiny === true) {
+    //   dragSrcEl.children[0].children[0].checked = true;
+    //   dropDestEl.children[0].children[0].checked = false;
+    // }
   }
 
   addButtonHandlers();

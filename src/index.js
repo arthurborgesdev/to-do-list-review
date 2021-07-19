@@ -53,8 +53,8 @@ window.addEventListener('load', () => {
   const localStorageList = getFromLocalStorage();
 
   if (localStorageList == null) {
-    setToLocalStorage(todo, true);
-    populateTodos(todo);
+    setToLocalStorage(todo);
+    populateTodos(todo, true);
   } else {
     const sortedList = sortIndex(localStorageList);
     populateTodos(sortedList, false);

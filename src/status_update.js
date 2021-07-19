@@ -5,8 +5,10 @@ function updateTodo(todoItem) {
   const checkbox = todoItem.children[0].children[0];
 
   if (checkbox.checked) {
+    checkbox.setAttribute('checked', true);
     checkbox.nextElementSibling.style.textDecoration = 'line-through';
   } else {
+    checkbox.removeAttribute('checked');
     checkbox.nextElementSibling.style.textDecoration = 'none';
   }
 
